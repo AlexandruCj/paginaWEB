@@ -1,0 +1,273 @@
+/* ===== RESET CSS básico ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Fuente LOUD";
+  src: url("../AlfaSlabOne-Regular.ttf") format('truetype');
+}
+
+/* ===== ESTILOS BASE ===== */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background-color: #292929;
+}
+.GP{
+   width: 60%; 
+   margin-left: 25%;
+   margin-top: 10px;
+   -webkit-box-shadow: 1px 2px 4px 4px #000000; 
+    box-shadow: 1px 2px 4px 4px #000000;
+}
+.PrimerInvento{
+  width: 30%; 
+   margin-left: 40%;
+   margin-top: 10px;
+}
+.galeria{
+  display: grid;
+  grid-template-columns: auto auto auto; /*tres columnas */
+  gap: 10px; /* espacio entre imágenes */
+  align-items: center; /* alinea verticalmente */
+  
+}
+.bmw:hover{ /* sombras, hover es el movimiento qeu ahce al pasar sobre arriba */
+  transform: scale(1.03);
+  -webkit-box-shadow: 1px 2px 4px 4px #000000; 
+    box-shadow: 1px 2px 4px 4px #000000;
+}
+.Ducati:hover{ /* sombras, hover es el movimiento qeu ahce al pasar sobre arriba */
+  transform: scale(1.03);
+  -webkit-box-shadow: 1px 2px 4px 4px #000000; 
+    box-shadow: 1px 2px 4px 4px #000000;
+}
+.cross:hover{ /* sombras, hover es el movimiento qeu ahce al pasar sobre arriba */
+  transform: scale(1.03);
+  -webkit-box-shadow: 1px 2px 4px 4px #000000; 
+    box-shadow: 1px 2px 4px 4px #000000;
+}
+.Kawasaki:hover{ /* sombras, hover es el movimiento qeu ahce al pasar sobre arriba */
+  transform: scale(1.03);
+  -webkit-box-shadow: 1px 2px 4px 4px #000000; 
+    box-shadow: 1px 2px 4px 4px #000000;
+}
+.H2r:hover{ /* sombras, hover es el movimiento qeu ahce al pasar sobre arriba */
+  transform: scale(1.03);
+  -webkit-box-shadow: 1px 2px 4px 4px #000000; 
+    box-shadow: 1px 2px 4px 4px #000000;
+}
+.varias:hover{ /* sombras, hover es el movimiento qeu ahce al pasar sobre arriba */
+  transform: scale(1.03);
+  -webkit-box-shadow: 1px 2px 4px 4px #000000; 
+    box-shadow: 1px 2px 4px 4px #000000;
+}
+.bmw{ /* redondear la imagen con border radius, margin, tamaño, y lo de grid para poner en la pocision que quiero, border para ponerle borde a la imagen el px es grosor */
+  width: 90%;
+  border-radius: 10px;
+  margin: 5px 5px;
+  grid-column: 1;
+  grid-row: 1;
+  border: 3px solid black;
+}
+.Kawasaki{ /* redondear la imagen con border radius, margin, tamaño, y lo de grid para poner en la pocision que quiero, border para ponerle borde a la imagen el px es grosor */
+  
+  width: 90%;
+  border-radius: 10px;
+  margin: 5px 5px;
+  grid-column: 2;
+  grid-row: 2;
+  border: 3px solid black;
+}
+.Ducati{ /* redondear la imagen con border radius, tamaño, y lo de grid para poner en la pocision que quiero, border para ponerle borde a la imagen el px es grosor */
+  width: 90%;
+  border-radius: 10px;
+  grid-column: 3;
+  grid-row: 1;
+  border: 3px solid black;
+}
+.H2r{  /* redondear la imagen con border radius, tamaño, y lo de grid para poner en la pocision que quiero, border para ponerle borde a la imagen el px es grosor */
+  width: 90%;
+  border-radius: 10px;
+  grid-column: 3;
+  grid-row: 2;
+  border: 3px solid black;
+}
+.cross{ /* redondear la imagen con border radius, tamaño, y lo de grid para poner en la pocision que quiero, border para ponerle borde a la imagen el px es grosor */
+  width: 90%;
+  border-radius: 10px;
+  grid-column: 3;
+  grid-row: 1;
+  border: 3px solid black;
+}
+.varias{ /* redondear la imagen con border radius, tamaño, y lo de grid para poner en la pocision que quiero, border para ponerle borde a la imagen el px es grosor */
+  width: 90%;
+  border-radius: 10px;
+  grid-column: 3;
+  grid-row: 2;
+  border: 3px solid black;
+}
+h2{
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Fuente LOUD";
+}
+h3{
+  margin-top: 10px;
+  font-family: "Fuente LOUD";
+}
+p{
+  margin: 0px 5px 0px 35px;
+}
+/* TODO: Alinear el contenido de main, poner colores de fondo, etc. */
+main {
+  /* Ejemplo: */
+  /* width: min(1100px, 90%); */
+  width: 70%;
+  margin-top: 20px;
+  background-color: white;
+  margin: 20px auto;
+}
+
+/* ===== CABECERA Y MENÚ SUPERIOR ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  /* TODO: Añade color de fondo, color de texto, padding, etc. */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+   font-family: "Bungee Shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.site-header h1 {
+  /* TODO: Estilo del título (tamaño, margen, etc.) */
+margin: 25px 0px 0px 90px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.main-nav ul li a { /* esto es para ponerlo en linea con dispaly: inline-block, para que quite el estilo de lista y para que cuando pases por el se agrande con animacion lenta */
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.main-nav ul li a:hover { /* para que se pueda agrandar al apsar por encima */
+  transform: scale(1.1);
+}
+
+.main-nav a {
+  /* TODO: Estilo de enlaces del menú superior (color, padding, :hover, etc.) */
+  color: white;
+  padding: 2px;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+
+/* ===== BOTÓN HAMBURGUESA PARA GESTIONAR EL MENÚ LATERAL ===== */
+.open-menu {
+  position: fixed;
+  top: 25px;
+  left: 14px;
+  z-index: 20;
+  font-size: 26px;
+  /* TODO: Colores, borde, padding, etc. */
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: red;
+  
+}
+
+/* Efecto visual cuando el menú está abierto */
+.open-menu.active {
+  /* TODO: Cambia color de fondo, rota un poco el icono, etc. */
+  color: white;
+  background-color: #f17f5d;
+}
+
+/* ===== MENÚ LATERAL DESLIZANTE ===== */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -230px;            /* oculto inicialmente */
+  width: 230px;
+  height: 100%;
+  /* TODO: color de fondo, color de texto… */
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 15;
+  background-color: #f17f5d;
+  color: white;
+  padding-left: 20px;
+}
+
+.side-menu.active {
+  left: 0;                 /* aparece cuando tiene la clase "active" */
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.side-menu a {
+  display: block;
+  padding: 12px 20px;
+  /* TODO: color de texto, quitar subrayado, etc. */
+  color:white;
+  text-decoration: none;
+  transition: transform 0.2s;
+  
+}
+
+
+/* TODO: Añade :hover para los enlaces del menú lateral */
+.side-menu a:hover {
+  transform: scale(1.03);
+}
+.side-menu a:focus {
+  border: 2px solid white;
+}
+.table2{
+  margin: auto;
+}
+tbody > tr > td{
+  padding: 5px;
+  text-align: center;
+}
+.enviar:hover{
+  transform: scale(1.03);
+}
+.borrar:hover{
+  transform: scale(1.03);
+}
+/* ===== PIE DE PÁGINA ===== */
+.site-footer {
+  /* TODO: estilo del footer (color de fondo, texto centrado, padding…) */
+text-align: center;
+background-color: black;
+padding: 40px;
+margin: auto;
+}
+
+.site-footer a{
+  /* TODO: estilo del enlace del footer y :visited si lo deseas */
+  color:white;
+}
+.site-footer a:visited {
+  /* TODO: estilo del enlace del footer y :visited si lo deseas */
+  color:blue;
+}
